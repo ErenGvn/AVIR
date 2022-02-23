@@ -1,7 +1,7 @@
 # AVIR
 Senior Project
 
--Ali Yağız Mumcu
--Barış Aksakal
--Eren Güven
--Kerem Mert Ada
+-Ali Yağız Mumcu\n
+-Barış Aksakal\n
+-Eren Güven\n
+-Kerem Mert Ada\n

@@ -7,7 +7,7 @@ public class ManController : MonoBehaviour
     public TextMesh text;
     [SerializeField] Rigidbody glove1;
     [SerializeField] Rigidbody glove2;
-
+    //dummy commit
     // Start is called before the first frame update
     void Start()
     {

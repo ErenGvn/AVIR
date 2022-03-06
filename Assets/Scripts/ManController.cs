@@ -17,13 +17,14 @@ public class ManController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("vel:"+glove1.velocity.magnitude);
        
     }
     void OnCollisionEnter(Collision collision)
     {
         if (collision.collider == glove1 || collision.collider == glove2)
         {
-
+            
             text.text = ("Hit!!");
             GameObject starttext = Instantiate(text.transform.gameObject, transform.position, Quaternion.identity);
             Destroy(starttext, 100);

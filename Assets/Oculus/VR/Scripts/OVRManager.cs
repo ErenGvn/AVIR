@@ -1433,16 +1433,16 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		// uncomment the following line to disable the callstack printed to log
 		//Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);  // TEMPORARY
 
-		Debug.Log("Unity v" + Application.unityVersion + ", " +
-				"Oculus Utilities v" + OVRPlugin.wrapperVersion + ", " +
-				"OVRPlugin v" + OVRPlugin.version + ", " +
-				"SDK v" + OVRPlugin.nativeSDKVersion + ".");
+		//////Debug.Log("Unity v" + Application.unityVersion + ", " +
+		//////		"Oculus Utilities v" + OVRPlugin.wrapperVersion + ", " +
+		//////		"OVRPlugin v" + OVRPlugin.version + ", " +
+		//////		"SDK v" + OVRPlugin.nativeSDKVersion + ".");
 
-		Debug.LogFormat("SystemHeadset {0}, API {1}", systemHeadsetType.ToString(), xrApi.ToString());
+		//////Debug.LogFormat("SystemHeadset {0}, API {1}", systemHeadsetType.ToString(), xrApi.ToString());
 
 		if (xrApi == XrApi.OpenXR)
 		{
-			Debug.LogFormat("OpenXR instance 0x{0:X} session 0x{1:X}", xrInstance, xrSession);
+			//////Debug.LogFormat("OpenXR instance 0x{0:X} session 0x{1:X}", xrInstance, xrSession);
 		}
 
 #if !UNITY_EDITOR

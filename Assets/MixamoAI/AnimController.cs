@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System;
+
 
 public class AnimController : MonoBehaviour
 {
@@ -18,6 +20,11 @@ public class AnimController : MonoBehaviour
     float blockWaitTime=0;
     Vector3 agentVel;
     bool blockController = false;
+
+    private Health healthbarcontroller;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +41,7 @@ public class AnimController : MonoBehaviour
 
      //   agent.SetDestination(target.transform.position);
         //agent.Move(target.transform.position);
+        healthbarcontroller = gameObject.GetComponent<Health>();
     }
 
     void Update()
@@ -50,7 +58,7 @@ public class AnimController : MonoBehaviour
             animator.SetBool("block", false);
 
         animator.SetBool("punch", false);
-        Debug.Log("blockc:"+ blockController);
+        //Debug.Log("blockc:"+ blockController);
         ////if(distance<15)
         ////     Debug.Log("distance:" +distance);
 
@@ -71,7 +79,7 @@ public class AnimController : MonoBehaviour
         
             agent.velocity = Vector3.zero;
             animator.SetFloat("walkSpeed", 0);
-            if (blockController && Random.value >0.5f && blockWaitTime<=0)
+            if (blockController && UnityEngine.Random.value >0.5f && blockWaitTime<=0)
             {
                 animator.SetBool("block",true);
                 startBlockTime = 2;
@@ -84,6 +92,22 @@ public class AnimController : MonoBehaviour
             }
         }
 
+        FaceTarget(tarVec);
+        Debug.Log(healthbarcontroller.currentHealth);
+        //if(healthbarcontroller.maxHealth == 0)
+        //{
+        //    animator.SetFloat("walkSpeed", 1);
+        //}
+
+
+    }
+
+    private void FaceTarget(Vector3 destination)
+    {
+        Vector3 lookPos = destination - transform.position;
+        lookPos.y = 0;
+        Quaternion rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 0.2f);
     }
 
 
@@ -98,7 +122,7 @@ public class AnimController : MonoBehaviour
 
 
     //    // transform.LookAt(target);
-     
+
     //    animator.SetBool("punch", false);
 
 
@@ -115,7 +139,7 @@ public class AnimController : MonoBehaviour
 
     //    if (Vector3.Distance(this.transform.position, target.transform.position) > agent.stoppingDistance && !animator.GetBool("punch") && !animator.GetBool("block"))
     //    {
-            
+
     //        animator.SetFloat("walkSpeed", 1);
     //       // agent.ResetPath();
     //        agent.SetDestination(target.transform.position);
@@ -123,14 +147,14 @@ public class AnimController : MonoBehaviour
     //    }
     //    else
     //    {
-            
+
     //       // animator.SetFloat("walkSpeed", 0);
     //        if (startBlockTime <= 0)
     //        {
     //            if (Random.value < 0.5f)
     //            {
     //                animator.SetBool("punch", true);
-                    
+
     //            }
     //            else
     //            {
@@ -159,6 +183,9 @@ public class AnimController : MonoBehaviour
 
     //}
 
+
+
+
     void OnCollisionEnter(Collision collision)
     {
         
@@ -168,12 +195,18 @@ public class AnimController : MonoBehaviour
             blockController = true;
             Debug.Log("vuruþ");
             popup.SetActive(true);
-           // rb.AddForce(-(3f * transform.forward), ForceMode.Impulse);
-          //  animator.SetFloat("walkSpeed", 0);
-           // agent.stoppingDistance = 1f;
+            if (!animator.GetBool("block"))
+            {
+                healthbarcontroller.ModifyHealth(-10);
+            }
+
+
+            // rb.AddForce(-(3f * transform.forward), ForceMode.Impulse);
+            //  animator.SetFloat("walkSpeed", 0);
+            // agent.stoppingDistance = 1f;
             //////Debug.Log(agent.stoppingDistance);
             //////Debug.Log(this.transform.position + "," + target.transform.position);
-            
+
 
 
         }

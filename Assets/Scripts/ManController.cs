@@ -7,6 +7,7 @@ public class ManController : MonoBehaviour
     public TextMesh text;
     [SerializeField] Rigidbody glove1;
     [SerializeField] Rigidbody glove2;
+    [SerializeField] CapsuleCollider bodyCollider;
     //dummy commit
     // Start is called before the first frame update
     void Start()
@@ -25,9 +26,9 @@ public class ManController : MonoBehaviour
         if (collision.collider == glove1 || collision.collider == glove2)
         {
             
-            text.text = ("Hit!!");
-            GameObject starttext = Instantiate(text.transform.gameObject, transform.position, Quaternion.identity);
-            Destroy(starttext, 100);
+            //text.text = ("Hit!!");
+            //GameObject starttext = Instantiate(text.transform.gameObject, transform.position, Quaternion.identity);
+            //Destroy(starttext, 100);
 
         }
 

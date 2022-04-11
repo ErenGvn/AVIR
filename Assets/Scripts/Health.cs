@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
 
     [SerializeField]
     public int maxHealth = 100;
-
     public int currentHealth;
+
+
 
 
     public event Action<float> OnHealthPctChanged = delegate { };
@@ -27,10 +29,11 @@ public class Health : MonoBehaviour
         OnHealthPctChanged(currentHealthPct);
     }
 
-
-
     public void Update()
     {
+
+
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log(currentHealth);

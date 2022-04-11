@@ -8,11 +8,11 @@ using System;
 public class AnimController : MonoBehaviour
 {
     [HideInInspector] public NavMeshAgent agent;
-    public TextMesh text;
+
     public GameObject target;
     [SerializeField] CapsuleCollider glove1;
     [SerializeField] CapsuleCollider glove2;
-    [SerializeField] GameObject popup;
+
   //[SerializeField] float minDistance;
     Animator animator;
     Rigidbody rb;
@@ -31,11 +31,10 @@ public class AnimController : MonoBehaviour
 
 
 
-
     // Start is called before the first frame update
     void Start()
     {
-       agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         blocking = animator.GetBehaviour<Blocking>();
@@ -52,21 +51,47 @@ public class AnimController : MonoBehaviour
         healthbarcontroller = gameObject.GetComponent<Health>();
 
 
+
+
+
+        animator.SetBool(AnimatorHashId.punch1hasid, false);
+        animator.SetBool(AnimatorHashId.punch2hasid, false);
+        animator.SetBool(AnimatorHashId.blockhashid, false);
+        animator.SetBool(AnimatorHashId.combo2hashid, false);
+        animator.SetBool(AnimatorHashId.combohasid, false);
+        animator.SetBool(AnimatorHashId.hit1hashid, false);
+        animator.SetBool(AnimatorHashId.hit2hashid, false);
+        animator.SetBool(AnimatorHashId.walkinghasid, false);
+        animator.SetBool(AnimatorHashId.dyinghashid, false);
+
+
+
+
     }
 
     void Update()
     {
+        if(animator.GetBool(AnimatorHashId.hit1hashid))
+        Debug.Log(animator.GetBool(AnimatorHashId.hit1hashid) + "hit1 aldý");
+
         if (healthbarcontroller.currentHealth <= 0)
         {
-            animator.SetBool("punch1", false);
-            animator.SetBool("punch2", false);
-            animator.SetBool("block", false);
-            animator.SetBool("punch1", false);
+            animator.SetBool(AnimatorHashId.punch1hasid, false);
+            animator.SetBool(AnimatorHashId.punch2hasid, false);
+            animator.SetBool(AnimatorHashId.blockhashid, false);
+            //.SetBool("punch1", false);
             Debug.Log("öldü");
-            animator.SetFloat("health", healthbarcontroller.currentHealth);
+            animator.SetFloat(AnimatorHashId.healthhasid, healthbarcontroller.currentHealth);
         }
 
-     
+        //animator.SetBool("punch1", !(healthbarcontroller.currentHealth <= 0) );
+        //animator.SetBool("punch2", !(healthbarcontroller.currentHealth <= 0) );
+        //animator.SetBool("block", !(healthbarcontroller.currentHealth <= 0) );
+        //animator.SetBool("punch1", !(healthbarcontroller.currentHealth <= 0) );
+        //(healthbarcontroller.currentHealth <= 0) ? Debug.Log("öldü") : Debug.Log("yaþýyo");
+        //animator.SetFloat("health", healthbarcontroller.currentHealth);
+
+
 
 
         Vector3 tarVec = new Vector3(target.transform.position.x, 0, target.transform.position.z);
@@ -82,114 +107,131 @@ public class AnimController : MonoBehaviour
         //if (startBlockTime<=0)
         //    animator.SetBool("block", false);
 
-        if (punchWaitTime <= 0)
-        {
+        //if (punchWaitTime <= 0)
+        //{
 
-            //if(comboControl1)
-            //    comboControl1 = false;
+        //    //if(comboControl1)
+        //    //    comboControl1 = false;
 
-            if (animator.GetBool("punch1"))
-            {
-                animator.SetBool("punch1", false);
-            }
+        //    if (animator.GetBool("punch1"))
+        //    {
+        //        animator.SetBool("punch1", false);
+        //    }
 
-            if (animator.GetBool("punch2"))
-            {
-                animator.SetBool("punch2", false);
-            }
+        //    if (animator.GetBool("punch2"))
+        //    {
+        //        animator.SetBool("punch2", false);
+        //    }
 
-            if (animator.GetBool("combo"))
-            {
-                animator.SetBool("combo", false);
-            }
+        //    if (animator.GetBool("combo"))
+        //    {
+        //        animator.SetBool("combo", false);
+        //    }
 
-            if (animator.GetBool("combo2"))
-            {
-                animator.SetBool("combo2", false);
-            }
+        //    if (animator.GetBool("combo2"))
+        //    {
+        //        animator.SetBool("combo2", false);
+        //    }
 
 
-        }
+        //}
+
+
+        animator.SetBool(AnimatorHashId.punch1hasid, !((punchWaitTime <= 0) && (animator.GetBool(AnimatorHashId.punch1hasid))));
+        animator.SetBool(AnimatorHashId.punch2hasid, !((punchWaitTime <= 0) && (animator.GetBool(AnimatorHashId.punch2hasid))));
+        animator.SetBool(AnimatorHashId.combohasid, !((punchWaitTime <= 0) && (animator.GetBool(AnimatorHashId.combohasid))));
+        animator.SetBool(AnimatorHashId.combo2hashid, !((punchWaitTime <= 0) && (animator.GetBool(AnimatorHashId.combo2hashid))));
 
         //animator.SetBool("punch1", false);
         //animator.SetBool("punch2", false);
         //animator.SetBool("combo", false);
-        animator.SetBool("combo2", false);
+        //animator.SetBool("combo2", false);
         //Debug.Log("blockc:"+ blockController);
         ////if(distance<15)
         ////     Debug.Log("distance:" +distance);
+        ///
 
-        animator.SetFloat("distance", distance);
+        bool attackcontroller = !(animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance) && (!animator.GetBool(AnimatorHashId.blockhashid)) && (punchWaitTime <= 0);
 
-        if (animator.GetFloat("distance") > agent.stoppingDistance)
-        {
-            //  agent.velocity 
-            if (!animator.GetBool("punch1") && !animator.GetBool("block") && !animator.GetBool("punch2") && !animator.GetBool("combo") && !animator.GetBool("combo2"))
-            {
-                animator.SetFloat("walkSpeed", 1);
-                //agent.SetDestination(target.transform.position);
-
-            }
-        }
-        else
-        {
-        //    Debug.Log("gg");
-        
-         
-            animator.SetFloat("walkSpeed", 0);
-            if (blocking.blockController && UnityEngine.Random.value > 0.4f && blockWaitTime <= 0)
-            {
-              animator.SetBool("block", true);
-        
-            }
-            if (!animator.GetBool("block"))
-            {
-                if (punchWaitTime <= 0)
-                {
-                    if (UnityEngine.Random.value < 0.8f)
-                    {
-                        if (comboControl1)
-                        {
-                            animator.SetBool("punch2", false);
-                            animator.SetBool("combo2", false);
-                            animator.SetBool("punch1", false);
-                            animator.SetBool("combo", true);
-                            comboControl1 = false;
-                        }
-                        if (UnityEngine.Random.value < 0.5f)
-                        {
-                            animator.SetBool("punch1", false);
-                            animator.SetBool("combo", false);
-                            animator.SetBool("combo2", false);
-                            animator.SetBool("punch2", true);
-                            if (UnityEngine.Random.value < 0.35f && !comboControl1)
-                            {
-                                comboControl1 = true;
-                            }
-                        }
-                        else
-                        {
-                            animator.SetBool("punch2", false);
-                            animator.SetBool("combo", false);
-                            animator.SetBool("combo2", false);
-                            animator.SetBool("punch1", true);
-                        }
-                    }
-                    else
-                    {
-                        animator.SetBool("punch1", false);
-                        animator.SetBool("punch2", false);
-                        animator.SetBool("combo", false);
-                        animator.SetBool("combo2", true);
-                    }
-
-
-                }
-            }
-        }
+        animator.SetFloat(AnimatorHashId.distancehashid, distance);
+        animator.SetFloat(AnimatorHashId.walkspeedhasid, (animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance) /* && (!animator.GetBool("punch1") && !animator.GetBool("block") && !animator.GetBool("punch2") && !animator.GetBool("combo") && !animator.GetBool("combo2")) */? 1:0);
+        animator.SetBool(AnimatorHashId.blockhashid, !(animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance) && (blocking.blockController && UnityEngine.Random.value > 0.4f && blockWaitTime <= 0) ? true:false);
+        animator.SetBool(AnimatorHashId.punch2hasid, attackcontroller && (UnityEngine.Random.value < 0.8f) && (UnityEngine.Random.value < 0.5f) ? true : false);
+        animator.SetBool(AnimatorHashId.combo2hashid, attackcontroller && (UnityEngine.Random.value >= 0.8f) ? true : false);
+        animator.SetBool(AnimatorHashId.punch1hasid, attackcontroller && (UnityEngine.Random.value < 0.8f) && (UnityEngine.Random.value >= 0.5f) ? true : false);
+        animator.SetBool(AnimatorHashId.combohasid, attackcontroller && (UnityEngine.Random.value < 0.8f) && comboControl1 ? true : false);
+        comboControl1 = !(attackcontroller && (UnityEngine.Random.value < 0.8f) && comboControl1);
 
         FaceTarget(tarVec);
-       
+
+        //if (animator.GetFloat("distance") > agent.stoppingDistance)
+        //{
+        //    //  agent.velocity 
+        //    if (!animator.GetBool("punch1") && !animator.GetBool("block") && !animator.GetBool("punch2") && !animator.GetBool("combo") && !animator.GetBool("combo2"))
+        //    {
+        //        animator.SetFloat("walkSpeed", 1);
+        //        //agent.SetDestination(target.transform.position);
+
+        //    }
+        //}
+        //else
+        //{
+        ////    Debug.Log("gg");
+
+
+        //    animator.SetFloat("walkSpeed", 0);
+        //    if (blocking.blockController && UnityEngine.Random.value > 0.4f && blockWaitTime <= 0)
+        //    {
+        //      animator.SetBool("block", true);
+
+        //    }
+        //    if (!animator.GetBool("block"))
+        //    {
+        //        if (punchWaitTime <= 0)
+        //        {
+        //            if (UnityEngine.Random.value < 0.8f)
+        //            {
+        //                if (comboControl1)
+        //                {
+        //                    animator.SetBool("punch2", false);
+        //                    animator.SetBool("combo2", false);
+        //                    animator.SetBool("punch1", false);
+        //                    animator.SetBool("combo", true);
+        //                    comboControl1 = false;
+        //                }
+        //                if (UnityEngine.Random.value < 0.5f)
+        //                {
+        //                    animator.SetBool("punch1", false);
+        //                    animator.SetBool("combo", false);
+        //                    animator.SetBool("combo2", false);
+        //                    animator.SetBool("punch2", true);
+        //                    if (UnityEngine.Random.value < 0.35f && !comboControl1)
+        //                    {
+        //                        comboControl1 = true;
+        //                    }
+        //                }
+        //                else
+        //                {
+        //                    animator.SetBool("punch2", false);
+        //                    animator.SetBool("combo", false);
+        //                    animator.SetBool("combo2", false);
+        //                    animator.SetBool("punch1", true);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                animator.SetBool("punch1", false);
+        //                animator.SetBool("punch2", false);
+        //                animator.SetBool("combo", false);
+        //                animator.SetBool("combo2", true);
+        //            }
+
+
+        //        }
+        //    }
+        //}
+
+
         //if(healthbarcontroller.maxHealth == 0)
         //{
         //    animator.SetFloat("walkSpeed", 1);
@@ -204,7 +246,7 @@ public class AnimController : MonoBehaviour
     //    Debug.Log("event works");
     //    if (!comboControl1)
     //        punchWaitTime = 2;
-        
+
     //}
 
     private void FaceTarget(Vector3 destination)
@@ -300,11 +342,10 @@ public class AnimController : MonoBehaviour
         
         if (collision.transform.CompareTag("Glove1") && !blocking.blockController)
         {
-
             blockWaitTime = 7;
             blocking.blockController = true;
-           
-            
+            #region oldblock
+
             //if (!collision.transform.CompareTag("Enemy"))
             //{
 
@@ -315,7 +356,7 @@ public class AnimController : MonoBehaviour
 
 
             //}
-            
+
 
 
             // rb.AddForce(-(3f * transform.forward), ForceMode.Impulse);
@@ -323,20 +364,15 @@ public class AnimController : MonoBehaviour
             // agent.stoppingDistance = 1f;
             //////Debug.Log(agent.stoppingDistance);
             //////Debug.Log(this.transform.position + "," + target.transform.position);
-
-
-
+            #endregion
         }
-        
+
 
         if (collision.transform.CompareTag("Glove2") && !blocking.blockController)
         {
-
-
-
+            blockWaitTime = 7;
             blocking.blockController = true;
-           
-
+            #region oldblock
             //if (!collision.transform.CompareTag("Enemy"))
             //{
             //    healthbarcontroller.ModifyHealth(-10);
@@ -354,9 +390,7 @@ public class AnimController : MonoBehaviour
             // agent.stoppingDistance = 1f;
             //////Debug.Log(agent.stoppingDistance);
             //////Debug.Log(this.transform.position + "," + target.transform.position);
-
-
-
+            #endregion
         }
         //if (Time.time < 100)
         //    return;

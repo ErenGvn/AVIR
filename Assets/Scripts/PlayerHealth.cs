@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class PlayerHealth : MonoBehaviour
@@ -8,6 +9,10 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField]
     public int maxHealth = 150;
+    public Image blood;
+
+    private float fadeouttime;
+    private float fadeoutfreq = 0.1f;
 
     public int currentHealth;
 
@@ -22,21 +27,37 @@ public class PlayerHealth : MonoBehaviour
     public void ModifyHealth(int amount)
     {
         currentHealth += amount;
-
+        fadeouttime = 1;
+        StartCoroutine(GetHitTexture());
         float currentHealthPct = (float)currentHealth / (float)maxHealth;
         OnHealthPctChanged(currentHealthPct);
     }
 
 
+    IEnumerator GetHitTexture()
+    {
+        while (fadeouttime >= 0)
+        {
+           
+            blood.color = new Color(blood.color.r, blood.color.g, blood.color.b, fadeouttime);
+            fadeouttime -= fadeoutfreq;
+            yield return new WaitForSeconds(fadeoutfreq);
+
+
+        }
+
+    }
+
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log(currentHealth);
 
-            ModifyHealth(-10);
-        }
+
+        if (fadeouttime <= 0)
+            StopCoroutine(GetHitTexture());
+
+
+
 
     }
     void OnCollisionEnter(Collision collision)

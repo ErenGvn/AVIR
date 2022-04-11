@@ -27,9 +27,9 @@ public class PunchingOne : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         rightcollider.enabled = false;
-        animator.SetBool("punch1", false);
-        if(animator.GetBool("combo"))
-            animator.SetBool("combo", false);
+        animator.SetBool(AnimatorHashId.punch1hasid, false);
+        if(animator.GetBool(AnimatorHashId.combohasid))
+            animator.SetBool(AnimatorHashId.combohasid, false);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

@@ -30,7 +30,7 @@ public class Blocking : StateMachineBehaviour
         //if (blockWaitTime > 0)
         //    blockWaitTime -= Time.deltaTime;
         if (startBlockTime <= 0)
-            animator.SetBool("block", false);
+            animator.SetBool(AnimatorHashId.blockhashid, false);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

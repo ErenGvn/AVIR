@@ -26,10 +26,10 @@ public class Walking : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
 
-        if (animator.GetFloat("distance") > agent.stoppingDistance)
+        if (animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance)
         {
             //  agent.velocity 
-            if (!animator.GetBool("punch1") && !animator.GetBool("block") && !animator.GetBool("punch2") && !animator.GetBool("combo") && !animator.GetBool("combo2"))
+            if (!animator.GetBool(AnimatorHashId.punch1hasid) && !animator.GetBool(AnimatorHashId.blockhashid) && !animator.GetBool(AnimatorHashId.punch2hasid) && !animator.GetBool(AnimatorHashId.combohasid) && !animator.GetBool(AnimatorHashId.combo2hashid))
             {
                
                 agent.SetDestination(target.transform.position);

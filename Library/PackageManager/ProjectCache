@@ -5,21 +5,289 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637832065879525445
-    m_Hash: 2063460034
+      ticks: 637852150387386262
+    m_Hash: 1684592167
   m_LockFileStatus:
     m_FilePath: C:/Users/ASUS/FinalProject/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637832066205353578
-    m_Hash: 643462578
+      ticks: 637852150387425927
+    m_Hash: 1717940928
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.unity.ads@3.7.5
+      testable: 0
+      isDirectDependency: 1
+      version: 3.7.5
+      source: 1
+      resolvedPath: C:\Users\ASUS\FinalProject\Library\PackageCache\com.unity.ads@3.7.5
+      assetPath: Packages/com.unity.ads
+      name: com.unity.ads
+      displayName: Advertisement
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        - 4.0.1
+        - 4.1.0
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        - 4.0.1
+        - 4.1.0
+        verified: 3.7.5
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - ads
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637635162230000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ads.git
+        revision: 0e92fa56fc4e4cd1fa305e76a911acdae6386b96
+        path: 
+    - packageId: com.unity.analytics@3.2.3
+      testable: 0
+      isDirectDependency: 1
+      version: 3.2.3
+      source: 1
+      resolvedPath: C:\Users\ASUS\FinalProject\Library\PackageCache\com.unity.analytics@3.2.3
+      assetPath: Packages/com.unity.analytics
+      name: com.unity.analytics
+      displayName: Analytics Library
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        - 3.8.1
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        - 3.8.1
+        verified: 3.6.12
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - analytics
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637122024780000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git@github.cds.internal.unity3d.com:unity/com.unity.analytics.git
+        revision: f067e92ace5c4e219c6d2221be78fdad5602011b
+        path: 
     - packageId: com.unity.cinemachine@2.5.0
       testable: 0
       isDirectDependency: 1
@@ -236,6 +504,7 @@ m_PackageAssets:
         - 1.14.12
         - 1.14.13
         - 1.14.15
+        - 1.14.16
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -243,6 +512,7 @@ m_PackageAssets:
         - 1.15.12
         - 1.15.13
         - 1.15.15
+        - 1.15.16
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -260,6 +530,7 @@ m_PackageAssets:
         - 1.15.12
         - 1.15.13
         - 1.15.15
+        - 1.15.16
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -270,7 +541,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.15
+        verified: 1.15.16
       dependencies:
       - name: com.unity.nuget.newtonsoft-json
         version: 2.0.0
@@ -367,6 +638,7 @@ m_PackageAssets:
         - 3.0.9
         - 3.0.10
         - 3.0.12
+        - 3.0.13
         compatible:
         - 1.0.2
         - 1.0.6
@@ -396,6 +668,7 @@ m_PackageAssets:
         - 3.0.9
         - 3.0.10
         - 3.0.12
+        - 3.0.13
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -469,6 +742,7 @@ m_PackageAssets:
         - 2.0.11
         - 2.0.12
         - 2.0.14
+        - 2.0.15
         compatible:
         - 1.0.2
         - 1.0.3
@@ -487,7 +761,8 @@ m_PackageAssets:
         - 2.0.11
         - 2.0.12
         - 2.0.14
-        verified: 2.0.14
+        - 2.0.15
+        verified: 2.0.15
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -594,6 +869,124 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
         path: 
+    - packageId: com.unity.package-manager-ui@2.2.0
+      testable: 0
+      isDirectDependency: 1
+      version: 2.2.0
+      source: 2
+      resolvedPath: C:\Users\ASUS\FinalProject\Library\PackageCache\com.unity.package-manager-ui@2.2.0
+      assetPath: Packages/com.unity.package-manager-ui
+      name: com.unity.package-manager-ui
+      displayName: Package Manager UI
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: shim
+      description: 'Use the Unity Package Manager user interface to manage a Project''s
+        packages and discover new packages.
+
+
+        For more information, click
+        the ''View documentation'' link above. '
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.1
+        - 0.0.2
+        - 0.0.3
+        - 0.0.4
+        - 1.2.0
+        - 1.3.0
+        - 1.5.1
+        - 1.6.1
+        - 1.7.0
+        - 1.7.2
+        - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.8.7
+        - 1.8.8
+        - 1.9.8
+        - 1.9.9
+        - 1.9.10
+        - 1.9.11
+        - 2.0.0-preview.2
+        - 2.0.0-preview.3
+        - 2.0.0-preview.4
+        - 2.0.0-preview.5
+        - 2.0.0-preview.6
+        - 2.0.0-preview.7
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.7
+        - 2.0.8
+        - 2.0.12
+        - 2.0.13
+        - 2.1.0-preview.1
+        - 2.2.0
+        compatible:
+        - 0.0.1
+        - 0.0.2
+        - 0.0.3
+        - 0.0.4
+        - 1.2.0
+        - 1.3.0
+        - 1.5.1
+        - 1.6.1
+        - 1.7.0
+        - 1.7.2
+        - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.8.7
+        - 1.8.8
+        - 1.9.8
+        - 1.9.9
+        - 1.9.10
+        - 1.9.11
+        - 2.0.0-preview.2
+        - 2.0.0-preview.3
+        - 2.0.0-preview.4
+        - 2.0.0-preview.5
+        - 2.0.0-preview.6
+        - 2.0.0-preview.7
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.7
+        - 2.0.8
+        - 2.0.12
+        - 2.0.13
+        - 2.1.0-preview.1
+        - 2.2.0
+        verified: 2.2.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 0
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
     - packageId: com.unity.postprocessing@2.3.0
       testable: 0
       isDirectDependency: 1
@@ -682,6 +1075,161 @@ m_PackageAssets:
         type: git
         url: git@github.com:Unity-Technologies/PostProcessing.git
         revision: e6de985c41f04a5fc7c7227dd67e3e73fac834e7
+        path: 
+    - packageId: com.unity.purchasing@2.0.3
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.3
+      source: 1
+      resolvedPath: C:\Users\ASUS\FinalProject\Library\PackageCache\com.unity.purchasing@2.0.3
+      assetPath: Packages/com.unity.purchasing
+      name: com.unity.purchasing
+      displayName: In App Purchasing
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Unity IAP supports the iOS, Mac, tvOS, Google Play, Facebook
+        Gameroom, Windows, Amazon, Samsung Galaxy, Tizen, Cloud Moolah MOO, Xiaomi
+        Mi Game Pay App Stores.
+
+
+        With Unity IAP, setting up in-app purchases
+        for your game across multiple app stores has never been easier.
+
+
+        Use
+        one common API to access all stores for free. With just a few lines of code,
+        you can fully understand and optimize your in-game economy.
+
+
+        Unity
+        IAP automatically couples with Unity Analytics enabling you to monitor and
+        act on trends in your revenue and purchase data across multiple platforms.
+
+
+        Includes
+        client-side receipt validation for Apple, Google Play, and Xiaomi Mi Game
+        Pay.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        verified: 4.0.3
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - purchasing
+      - iap
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 636898903790000000
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
         path: 
     - packageId: com.unity.render-pipelines.universal@10.7.0
       testable: 0
@@ -1276,6 +1824,7 @@ m_PackageAssets:
         - 0.1.20-preview
         - 0.1.21-preview
         - 1.0.0
+        - 2.0.0
         compatible:
         - 0.1.4-preview
         - 0.1.5-preview
@@ -1295,6 +1844,7 @@ m_PackageAssets:
         - 0.1.20-preview
         - 0.1.21-preview
         - 1.0.0
+        - 2.0.0
         verified: 
       dependencies:
       - name: com.unity.sysroot
@@ -1606,6 +2156,7 @@ m_PackageAssets:
         - 3.0.0-pre.2
         - 3.0.0-pre.4
         - 3.0.0
+        - 3.0.1
         compatible:
         - 1.11.0
         - 1.11.2
@@ -3601,6 +4152,7 @@ m_PackageAssets:
         - 0.1.18-preview
         - 0.1.19-preview
         - 1.0.0
+        - 2.0.0
         compatible:
         - 0.1.7-preview
         - 0.1.8-preview
@@ -3615,6 +4167,7 @@ m_PackageAssets:
         - 0.1.18-preview
         - 0.1.19-preview
         - 1.0.0
+        - 2.0.0
         verified: 
       dependencies: []
       resolvedDependencies: []
@@ -3673,6 +4226,7 @@ m_PackageAssets:
         - 0.1.14-preview
         - 0.1.15-preview
         - 1.0.0
+        - 2.0.0
         compatible:
         - 0.1.6-preview
         - 0.1.7-preview
@@ -3685,6 +4239,7 @@ m_PackageAssets:
         - 0.1.14-preview
         - 0.1.15-preview
         - 1.0.0
+        - 2.0.0
         verified: 
       dependencies:
       - name: com.unity.sysroot
@@ -3816,6 +4371,7 @@ m_PackageAssets:
         - 1.2.1
         - 1.2.4
         - 1.2.5
+        - 1.2.6
         compatible:
         - 0.0.12-preview.2
         - 0.0.12-preview.5
@@ -3833,7 +4389,8 @@ m_PackageAssets:
         - 1.2.1
         - 1.2.4
         - 1.2.5
-        verified: 1.2.5
+        - 1.2.6
+        verified: 1.2.6
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -4228,6 +4785,7 @@ m_PackageAssets:
         - 2.0.1-preview.1
         - 2.0.2
         - 3.0.1
+        - 3.0.2
         compatible:
         - 1.0.0-preview.2
         - 1.0.0-preview.3
@@ -4241,6 +4799,7 @@ m_PackageAssets:
         - 2.0.1-preview.1
         - 2.0.2
         - 3.0.1
+        - 3.0.2
         verified: 2.0.2
       dependencies: []
       resolvedDependencies: []
@@ -4298,6 +4857,7 @@ m_PackageAssets:
         - 1.1.0-pre.41
         - 1.1.0-pre.69
         - 1.2.0
+        - 1.3.1
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -4308,6 +4868,7 @@ m_PackageAssets:
         - 1.1.0-pre.41
         - 1.1.0-pre.69
         - 1.2.0
+        - 1.3.1
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest

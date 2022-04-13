@@ -15,12 +15,12 @@ C:/Users/ASUS/FinalProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55658
+54694
 Successfully changed project path to: C:/Users/ASUS/FinalProject
 C:/Users/ASUS/FinalProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 136.60 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.95 ms.
+Refreshing native plugins compatible for Editor in 98.06 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.83 ms.
 Initialize engine version: 2020.3.25f1 (9b9180224418)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/ASUS/FinalProject/Assets
@@ -36,96 +36,96 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001892 seconds.
+Registered in 0.001528 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.61 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 83.91 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.598 seconds
+- Completed reload, in  0.521 seconds
 Domain Reload Profiling:
-	ReloadAssembly (599ms)
-		BeginReloadAssembly (46ms)
+	ReloadAssembly (521ms)
+		BeginReloadAssembly (42ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (486ms)
-			LoadAssemblies (44ms)
+		EndReloadAssembly (420ms)
+			LoadAssemblies (40ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (146ms)
+			SetupTypeCache (124ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (211ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (186ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (75ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (64ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008669 seconds.
+Registered in 0.007324 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 112.66 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Refreshing native plugins compatible for Editor in 1.12 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 87.61 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 6 plugins.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.67.0
 Mono: successfully reloaded assembly
-- Completed reload, in  1.338 seconds
+- Completed reload, in  1.123 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1339ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (1124ms)
+		BeginReloadAssembly (123ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (1129ms)
-			LoadAssemblies (108ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (951ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (376ms)
+			SetupTypeCache (298ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (459ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (397ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (113ms)
-				BeforeProcessingInitializeOnLoad (111ms)
-				ProcessInitializeOnLoadAttributes (209ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.61 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.46 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 Unloading 4055 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 181.0 MB.
 System memory in use after: 181.2 MB.
 
 Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 4447.
-Total: 6.203700 ms (FindLiveObjects: 0.829300 ms CreateObjectMapping: 0.367000 ms MarkObjects: 4.847400 ms  DeleteObjects: 0.159000 ms)
+Total: 3.230100 ms (FindLiveObjects: 0.264700 ms CreateObjectMapping: 0.193400 ms MarkObjects: 2.647100 ms  DeleteObjects: 0.124200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -140,199 +140,32 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/OfficeScene.unity
-  artifactKey: Guid(233c3d01ab53527498ab3be2f6f79c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/OfficeScene.unity using Guid(233c3d01ab53527498ab3be2f6f79c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e690f1dce43306750d2f3970bfb4c6') in 0.023579 seconds 
-  Import took 0.033087 seconds .
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Prefabs/SceneSampler.prefab
+  artifactKey: Guid(220df4ca43f2b4f4b8ce95f502e1de2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Prefabs/SceneSampler.prefab using Guid(220df4ca43f2b4f4b8ce95f502e1de2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edd18a6e35e6a4bf6be46da69adb1e9') in 0.043055 seconds 
+  Import took 0.048145 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 54.773557 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Chairs and Stools/Office Chair Variant.prefab
-  artifactKey: Guid(e302621f2616c4042b0c4be3f63ea422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Chairs and Stools/Office Chair Variant.prefab using Guid(e302621f2616c4042b0c4be3f63ea422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f134a061498eeffb958ef2aee45efc4') in 0.144438 seconds 
-  Import took 0.151778 seconds .
+  Time since last request: 0.000203 seconds.
+  path: Assets/Oculus/Platform/Samples/GroupPresenceSample/Prefabs/Group Presence Sample.prefab
+  artifactKey: Guid(a7de3e5619aa4f94c86abdaa1aad343b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Platform/Samples/GroupPresenceSample/Prefabs/Group Presence Sample.prefab using Guid(a7de3e5619aa4f94c86abdaa1aad343b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61358b0edbe35fcaaa2a40975e2b016') in 0.015128 seconds 
+  Import took 0.020818 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Chairs and Stools/Stool.prefab
-  artifactKey: Guid(30971ea7d19a057458bf89e85d9d1f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Chairs and Stools/Stool.prefab using Guid(30971ea7d19a057458bf89e85d9d1f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b47e23d6b1b1b24cb582fac2af9ce81') in 0.226597 seconds 
-  Import took 0.232284 seconds .
+  Time since last request: 7.233866 seconds.
+  path: Assets/Scenes/MenuScene.unity
+  artifactKey: Guid(f2334ea5bec528c4a93bedf21ab13c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuScene.unity using Guid(f2334ea5bec528c4a93bedf21ab13c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80d7056b5365de6e7b702d9bf5b26fd') in 0.006070 seconds 
+  Import took 0.012826 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Chairs and Stools/Office Chair.prefab
-  artifactKey: Guid(dc35c61ecac9f3e4ea7e96c2ce7f1218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Chairs and Stools/Office Chair.prefab using Guid(dc35c61ecac9f3e4ea7e96c2ce7f1218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8b7723292ccbe1eccb1c21328b7b80') in 0.035539 seconds 
-  Import took 0.041200 seconds .
+  Time since last request: 14.321603 seconds.
+  path: Assets/BodyHit.cs
+  artifactKey: Guid(888d1c887c9e1c04e981b9bde8015b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BodyHit.cs using Guid(888d1c887c9e1c04e981b9bde8015b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a298ba295300b30b0876fcfa88dbfac') in 0.016359 seconds 
+  Import took 0.022246 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 53.761938 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables
-  artifactKey: Guid(30f8ad2042ee31048a0894934f751dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables using Guid(30f8ad2042ee31048a0894934f751dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b901864c9775757463e97fb291fd28dc') in 0.007938 seconds 
-  Import took 0.018492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.050895 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Table Set 1 Dark Oak.prefab
-  artifactKey: Guid(45276250b71dd9f4488e3be0523a1e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Table Set 1 Dark Oak.prefab using Guid(45276250b71dd9f4488e3be0523a1e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af576b44d5009c14948b1df9bb79cece') in 0.121247 seconds 
-  Import took 0.129144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Table Set 1 Grey Wood Variant.prefab
-  artifactKey: Guid(827062553953ace449df65073bc88caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Table Set 1 Grey Wood Variant.prefab using Guid(827062553953ace449df65073bc88caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c60831f849e305e3ec16856d7cf7f32') in 0.076964 seconds 
-  Import took 0.085848 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.810522 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/White Wood
-  artifactKey: Guid(f8077a2372e486e498e5d2f6325c573a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/White Wood using Guid(f8077a2372e486e498e5d2f6325c573a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36eb3eb338ec8f6c201bc8102d899531') in 0.008064 seconds 
-  Import took 0.015801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.055386 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/White Wood/Drawer Table Long White Wood Variant.prefab
-  artifactKey: Guid(0fc223096406f3d4d964af094cc016ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/White Wood/Drawer Table Long White Wood Variant.prefab using Guid(0fc223096406f3d4d964af094cc016ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2111fa2a68e97e4da825529bd250f8cb') in 0.077768 seconds 
-  Import took 0.084482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/White Wood/Table White Wood Variant.prefab
-  artifactKey: Guid(e69eb1afde9550f4b83fa3d849eb2aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/White Wood/Table White Wood Variant.prefab using Guid(e69eb1afde9550f4b83fa3d849eb2aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a6aa3e5565b77505cfc9a9cfc53334') in 0.047833 seconds 
-  Import took 0.053587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.644664 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Metal
-  artifactKey: Guid(172a7682d8cad3747ad347eb18a5a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Metal using Guid(172a7682d8cad3747ad347eb18a5a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b6cfaa5316c15e90c35a1a74cdf7ed') in 0.007347 seconds 
-  Import took 0.016692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.045484 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Metal/Table Metal Variant.prefab
-  artifactKey: Guid(d50a3e9b50b5f0f4b9c69fe84036a6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Metal/Table Metal Variant.prefab using Guid(d50a3e9b50b5f0f4b9c69fe84036a6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead8f9cae61fee57c22acea91f198f75') in 0.058279 seconds 
-  Import took 0.064734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.657937 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Grey Wood
-  artifactKey: Guid(6248a98010f62184fa6a79db15b7517d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Grey Wood using Guid(6248a98010f62184fa6a79db15b7517d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa889267eeae91f258a155711a95a5a6') in 0.009467 seconds 
-  Import took 0.017441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.187895 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Grey Wood/Drawer Table Long Grey Wood Variant.prefab
-  artifactKey: Guid(9467da3bd6f41fb47a3ad39c38b9f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Grey Wood/Drawer Table Long Grey Wood Variant.prefab using Guid(9467da3bd6f41fb47a3ad39c38b9f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e115481f2adc80f2ea9930223a33f10') in 0.044749 seconds 
-  Import took 0.053359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Grey Wood/Table Grey Wood Variant.prefab
-  artifactKey: Guid(0926d2a463524f24bafe7ac832056cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Grey Wood/Table Grey Wood Variant.prefab using Guid(0926d2a463524f24bafe7ac832056cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c791e79c91d024f0886d7a9dbf082b') in 0.030768 seconds 
-  Import took 0.037759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.776370 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Dark Oak
-  artifactKey: Guid(b7034971824332b4bae08bd05ab7345d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Dark Oak using Guid(b7034971824332b4bae08bd05ab7345d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26efe04138b3bd8190ec916f6ba966ec') in 0.010849 seconds 
-  Import took 0.018687 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041320 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Dark Oak/Drawer Table Long Dark Oak.prefab
-  artifactKey: Guid(d9ed09438f7ef114dbd1922e839b6837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Dark Oak/Drawer Table Long Dark Oak.prefab using Guid(d9ed09438f7ef114dbd1922e839b6837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2aa1dbe70e735680948d53f4d4605c4') in 0.032874 seconds 
-  Import took 0.040428 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Dark Oak/Table Dark Oak.prefab
-  artifactKey: Guid(10f9753d65559ea4cbd0c4930521130e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Dark Oak/Table Dark Oak.prefab using Guid(10f9753d65559ea4cbd0c4930521130e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c51d982df70f0d012a7abb9df8f0cfa') in 0.031011 seconds 
-  Import took 0.037741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.380675 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Blue Plastic
-  artifactKey: Guid(c84719a45801c1c4691a9565d607cd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Blue Plastic using Guid(c84719a45801c1c4691a9565d607cd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '875cf5af418777441d6a45d5f1974696') in 0.008490 seconds 
-  Import took 0.016093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.036315 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/Tables/Blue Plastic/Drawer Table Long Blue Plastic Variant.prefab
-  artifactKey: Guid(16f915d1f07f10f4dad53e9e66e98afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/Tables/Blue Plastic/Drawer Table Long Blue Plastic Variant.prefab using Guid(16f915d1f07f10f4dad53e9e66e98afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5238ce790d50bbc61a9f745ac6d13e8') in 0.077630 seconds 
-  Import took 0.085577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.078112 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/TVs
-  artifactKey: Guid(980198049a5d1ff45b95b1643908cef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/TVs using Guid(980198049a5d1ff45b95b1643908cef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77fbf4e1aa28a52e035d77333f6032ad') in 0.008285 seconds 
-  Import took 0.016670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.052068 seconds.
-  path: Assets/ScifiOfficeLite/Prefabs/TVs/Tv 32 Inch.prefab
-  artifactKey: Guid(fe19f183652f0434dba515f0a67f32fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScifiOfficeLite/Prefabs/TVs/Tv 32 Inch.prefab using Guid(fe19f183652f0434dba515f0a67f32fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a3e1f331e67b4c98f46380eb00dee0') in 0.021387 seconds 
-  Import took 0.028188 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 18.00 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 67 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.5 MB.
-System memory in use after: 93.7 MB.
-
-Unloading 67 unused Assets to reduce memory usage. Loaded Objects now: 4454.
-Total: 4.564900 ms (FindLiveObjects: 0.330100 ms CreateObjectMapping: 0.257900 ms MarkObjects: 3.949700 ms  DeleteObjects: 0.026200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

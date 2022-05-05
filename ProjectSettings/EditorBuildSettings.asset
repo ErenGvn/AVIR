@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ScifiOfficeLite/Scene/Demo.unity
     guid: 98f89f3b6ce2800479ea621b4ad1bad1
+  - enabled: 1
+    path: Assets/VR/Scenes/Showcase.unity
+    guid: 4b428d974fe647240b8cf1d57da58f04
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d7bacd0d0cfd69f4c813638587d8d885, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 24d94229b902732448eeca81f18c52f1, type: 2}

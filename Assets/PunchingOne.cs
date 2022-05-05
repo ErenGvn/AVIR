@@ -14,7 +14,7 @@ public class PunchingOne : StateMachineBehaviour
          rightcollider.enabled = true;
       
         if (!animator.GetComponent<AnimController>().comboControl1)
-            animator.GetComponent<AnimController>().punchWaitTime = 5;
+            animator.GetComponent<AnimController>().punchWaitTime = animator.GetComponent<AnimController>().pwtime;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

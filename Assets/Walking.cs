@@ -28,13 +28,23 @@ public class Walking : StateMachineBehaviour
 
         if (animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance)
         {
-            //  agent.velocity 
-            if (!animator.GetBool(AnimatorHashId.punch1hasid) && !animator.GetBool(AnimatorHashId.blockhashid) && !animator.GetBool(AnimatorHashId.punch2hasid) && !animator.GetBool(AnimatorHashId.combohasid) && !animator.GetBool(AnimatorHashId.combo2hashid))
-            {
-               
-                agent.SetDestination(target.transform.position);
 
-            }
+            if (animator.GetBool(AnimatorHashId.punch1hasid))
+                return;
+            if (animator.GetBool(AnimatorHashId.blockhashid))
+                return;
+            if (animator.GetBool(AnimatorHashId.punch2hasid))
+                return;
+            if (animator.GetBool(AnimatorHashId.combohasid))
+                return;
+            if (animator.GetBool(AnimatorHashId.combo2hashid))
+                return;
+            if (animator.GetBool(AnimatorHashId.taunthashid))
+                return;
+
+            agent.SetDestination(target.transform.position);
+
+            
         }
 
 

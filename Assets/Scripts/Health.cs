@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
 
     [SerializeField]
     public int maxHealth = 100;
-    public int currentHealth;
+    public float currentHealth;
 
 
 
@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void ModifyHealth(int amount)
+    public void ModifyHealth(float amount)
     {
         currentHealth += amount;
 

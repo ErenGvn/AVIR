@@ -11,10 +11,13 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 150;
     public Image blood;
 
+    [HideInInspector]
+    public float blockmultiplier = 1;
+
     private float fadeouttime;
     private float fadeoutfreq = 0.1f;
 
-    public int currentHealth;
+    public float currentHealth;
 
 
     public event Action<float> OnHealthPctChanged = delegate { };
@@ -24,13 +27,19 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void ModifyHealth(int amount)
+    public void ModifyHealth(float amount)
     {
-        currentHealth += amount;
+        currentHealth += amount / blockmultiplier;
         fadeouttime = 1;
         StartCoroutine(GetHitTexture());
         float currentHealthPct = (float)currentHealth / (float)maxHealth;
         OnHealthPctChanged(currentHealthPct);
+
+
+
+
+
+
     }
 
 
@@ -65,7 +74,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (collision.transform.CompareTag("Enemy"))
         {
-            Debug.Log("adam vuruþ");
+            //Debug.Log("adam vuruþ");
             ModifyHealth(-10);
 
 

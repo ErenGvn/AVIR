@@ -192,7 +192,7 @@ public class OVRSystemPerfMetrics
 
 			singleton = null;
 
-			Debug.Log("[OVRSystemPerfMetricsTcpServer] server destroyed");
+			//Debug.Log("[OVRSystemPerfMetricsTcpServer] server destroyed");
 		}
 
 		private void Update()

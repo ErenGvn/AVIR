@@ -39,7 +39,7 @@ public class Blocking : StateMachineBehaviour
         if (isBlock)
             isBlock = false;
         blockController = false;
-        Debug.Log("isblock" + isBlock);
+        //Debug.Log("isblock" + isBlock);
         //Debug.Log("blockWaitTime" + blockWaitTime);
     }
 

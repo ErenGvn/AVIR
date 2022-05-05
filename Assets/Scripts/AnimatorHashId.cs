@@ -17,7 +17,8 @@ public static class AnimatorHashId
     public static int combo2hashid => Animator.StringToHash("combo2");
     public static int distancehashid => Animator.StringToHash("distance");
     public static int healthhasid => Animator.StringToHash("health");
-
+    public static int ultihashid => Animator.StringToHash("ulti");
+    public static int taunthashid => Animator.StringToHash("taunt");
 
 
 }

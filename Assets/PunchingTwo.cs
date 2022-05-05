@@ -5,7 +5,7 @@ using UnityEngine;
 public class PunchingTwo : StateMachineBehaviour
 {
     private SphereCollider leftcollider;
-
+   
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -14,7 +14,7 @@ public class PunchingTwo : StateMachineBehaviour
         leftcollider.enabled = true;
 
         if (!animator.GetComponent<AnimController>().comboControl1)
-            animator.GetComponent<AnimController>().punchWaitTime = 2;
+           animator.GetComponent<AnimController>().punchWaitTime = animator.GetComponent<AnimController>().pwtime;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

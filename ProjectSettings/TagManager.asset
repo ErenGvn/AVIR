@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Glove
+  - Enemy
+  - Body
+  - Head
+  - Glove1
+  - Glove2
+  - left
+  - right
+  - Door
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -40,4 +50,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: image
+    uniqueID: 3683191899
     locked: 0

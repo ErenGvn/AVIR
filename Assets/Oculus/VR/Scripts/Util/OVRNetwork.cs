@@ -92,13 +92,13 @@ public class OVRNetwork
 			try
 			{
 				tcpListener.Start();
-				Debug.LogFormat("TcpListener started. Local endpoint: {0}", tcpListener.LocalEndpoint.ToString());
+			//	Debug.LogFormat("TcpListener started. Local endpoint: {0}", tcpListener.LocalEndpoint.ToString());
 			}
 			catch (SocketException e)
 			{
-				Debug.LogWarningFormat("[OVRNetworkTcpServer] Unsable to start TcpListener. Socket exception: {0}", e.Message);
-				Debug.LogWarning("It could be caused by multiple instances listening at the same port, or the port is forwarded to the Android device through ADB");
-				Debug.LogWarning("If the port is forwarded through ADB, use the Android Tools in Tools/Oculus/System Metrics Profiler to kill the server");
+				//Debug.LogWarningFormat("[OVRNetworkTcpServer] Unsable to start TcpListener. Socket exception: {0}", e.Message);
+				//Debug.LogWarning("It could be caused by multiple instances listening at the same port, or the port is forwarded to the Android device through ADB");
+				//Debug.LogWarning("If the port is forwarded through ADB, use the Android Tools in Tools/Oculus/System Metrics Profiler to kill the server");
 				tcpListener = null;
 			}
 
@@ -132,7 +132,7 @@ public class OVRNetwork
 			tcpListener.Stop();
 			tcpListener = null;
 
-			Debug.Log("[OVRNetworkTcpServer] Stopped listening");
+			//Debug.Log("[OVRNetworkTcpServer] Stopped listening");
 		}
 
 		private void DoAcceptTcpClientCallback(IAsyncResult ar)

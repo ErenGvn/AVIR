@@ -1,0 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+using UnityEngine.UI;
+
+public class Health : MonoBehaviour
+{
+
+    [SerializeField]
+    public int maxHealth = 100;
+    public float currentHealth;
+
+
+
+
+    public event Action<float> OnHealthPctChanged = delegate { };
+
+    public void OnEnable()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public void ModifyHealth(float amount)
+    {
+        currentHealth += amount;
+
+        float currentHealthPct = (float)currentHealth / (float)maxHealth;
+        OnHealthPctChanged(currentHealthPct);
+    }
+
+    public void Update()
+    {
+
+
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log(currentHealth);
+           
+            ModifyHealth(-10);
+        }
+
+           
+    }
+
+}

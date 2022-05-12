@@ -41,6 +41,10 @@ public class Walking : StateMachineBehaviour
                 return;
             if (animator.GetBool(AnimatorHashId.taunthashid))
                 return;
+            if (animator.GetBool(AnimatorHashId.ultihashid))
+                return;
+            if (animator.GetComponent<BossController>().boss2trigger)
+                return;
 
             agent.SetDestination(target.transform.position);
 

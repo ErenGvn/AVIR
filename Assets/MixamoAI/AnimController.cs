@@ -18,7 +18,7 @@ public class AnimController : MonoBehaviour
     Rigidbody rb;
     //float startBlockTime=0;
     float blockWaitTime = 0;
-    [HideInInspector] public float punchWaitTime = 0;
+    [HideInInspector] public float punchWaitTime = 5;
     [HideInInspector] public bool comboControl1 = false;
     Vector3 agentVel;
    // private bool blockController = false;
@@ -29,9 +29,13 @@ public class AnimController : MonoBehaviour
     public SphereCollider rightcollider;
     public SphereCollider leftcollider;
 
+    public CapsuleCollider body;
+    public SphereCollider head;
+
 
 
     // Start is called before the first frame update
+
 
 
     protected virtual void AnimInitilazor()
@@ -54,24 +58,27 @@ public class AnimController : MonoBehaviour
         animator = GetComponent<Animator>();
         blocking = animator.GetBehaviour<Blocking>();
         healthbarcontroller = gameObject.GetComponent<Health>();
+        pwtime = 5;
     }
 
 
 
     protected virtual void FightMecanic(float distance, bool ulti)
     {
+    
         if (!ulti)
         {
             bool attackcontroller = !(animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance) && (!animator.GetBool(AnimatorHashId.blockhashid)) && (punchWaitTime <= 0);
 
+
             animator.SetFloat(AnimatorHashId.distancehashid, distance);
             animator.SetFloat(AnimatorHashId.walkspeedhasid, (animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance) /* && (!animator.GetBool("punch1") && !animator.GetBool("block") && !animator.GetBool("punch2") && !animator.GetBool("combo") && !animator.GetBool("combo2")) */? 1 : 0);
             animator.SetBool(AnimatorHashId.blockhashid, !(animator.GetFloat(AnimatorHashId.distancehashid) > agent.stoppingDistance) && (blocking.blockController && UnityEngine.Random.value > 0.4f && blockWaitTime <= 0) ? true : false);
-            animator.SetBool(AnimatorHashId.punch2hasid, attackcontroller && (UnityEngine.Random.value < 0.8f) && (UnityEngine.Random.value < 0.5f) ? true : false);
-            animator.SetBool(AnimatorHashId.combo2hashid, attackcontroller && (UnityEngine.Random.value >= 0.8f) ? true : false);
-            animator.SetBool(AnimatorHashId.punch1hasid, attackcontroller && (UnityEngine.Random.value < 0.8f) && (UnityEngine.Random.value >= 0.5f) ? true : false);
-            animator.SetBool(AnimatorHashId.combohasid, attackcontroller && (UnityEngine.Random.value < 0.8f) && comboControl1 ? true : false);
-            comboControl1 = !(attackcontroller && (UnityEngine.Random.value < 0.8f) && comboControl1);
+            animator.SetBool(AnimatorHashId.punch2hasid, attackcontroller && (UnityEngine.Random.value < 0.1f) && (UnityEngine.Random.value < 0.5f) ? true : false);
+            //animator.SetBool(AnimatorHashId.combo2hashid, attackcontroller && (UnityEngine.Random.value >= 0.8f) ? true : false);
+            animator.SetBool(AnimatorHashId.punch1hasid, attackcontroller && (UnityEngine.Random.value < 0.1f) && (UnityEngine.Random.value >= 0.5f) ? true : false);
+            //animator.SetBool(AnimatorHashId.combohasid, attackcontroller && (UnityEngine.Random.value < 0.1f) && comboControl1 ? true : false);
+            //comboControl1 = !(attackcontroller && (UnityEngine.Random.value < 0.8f) && comboControl1);
         }
     }
 

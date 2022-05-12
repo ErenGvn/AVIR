@@ -5,13 +5,24 @@ using UnityEngine;
 public class PunchingTwo : StateMachineBehaviour
 {
     private SphereCollider leftcollider;
-   
+    private SphereCollider head;
+    private CapsuleCollider body;
+
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         leftcollider = animator.GetComponent<AnimController>().leftcollider;
         leftcollider.enabled = true;
+
+        head = animator.GetComponent<AnimController>().head;
+        head.isTrigger = false;
+
+        body = animator.GetComponent<AnimController>().body;
+        body.isTrigger = false;
+
+
 
         if (!animator.GetComponent<AnimController>().comboControl1)
            animator.GetComponent<AnimController>().punchWaitTime = animator.GetComponent<AnimController>().pwtime;
@@ -27,6 +38,8 @@ public class PunchingTwo : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         leftcollider.enabled = false;
+        head.isTrigger = true;
+        body.isTrigger = true;
         animator.SetBool("punch2", false);
     }
 

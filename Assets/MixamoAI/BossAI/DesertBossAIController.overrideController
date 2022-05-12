@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DesertBossAIController
+  m_Controller: {fileID: 9100000, guid: 56990a1ada0c51b43b8e9e66ef3bb3dd, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -203655887218126122, guid: de9d26f79f6f5684494af7ff76679861, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 0bde2ac073d84944c864c6fea438275b, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: d3cd245e259b4bd49a97c2626c58cdf7, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 1335fec4d16ad0e4a80d46268d31fc4f, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: fb1526f0de470984abe60e2dd745b4fd, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 3c50d48401df5d542ac274dfb1e14cff, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: af2931ddd7873ea46933125f4834d9d5, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 0bd3427ba3f22db418e0f763603bb1bb, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: e51266294f57a944fb6db4471b62b0d9, type: 3}
+    m_OverrideClip: {fileID: 6730169432503064962, guid: c5d96e1018071d441a6fbb6284104600, type: 3}

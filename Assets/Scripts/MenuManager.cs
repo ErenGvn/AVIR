@@ -23,9 +23,9 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void StartStory()
+    public void StartStory(string stagename)
     {
-
+        SceneManager.LoadScene(stagename);
     }
 
     public void StartSingleBattle()
